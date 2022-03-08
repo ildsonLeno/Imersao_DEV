@@ -35,10 +35,6 @@ main {
     border: 1px solid red;
 }
 
-.container {
-    
-}
-
 .fundoFolha {
     position: absolute;
     max-width: 500px;
