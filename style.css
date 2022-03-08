@@ -1,6 +1,13 @@
 body {
     background-color: #082B59;
+    font-family: 'Gochi Hand';
+    border: 1px solid red;
   }
+
+header {
+    align-items: center;
+    border: 1px solid red;
+}
   
 h1 {
     color:#ffffff;
@@ -8,7 +15,7 @@ h1 {
     font-size: 50px;
     margin: 10px 0px 10px 0px;
     padding: 5px;
-    border: 1px solid red;
+    z-index: 1;
 }
 
 p {
@@ -17,41 +24,42 @@ p {
     font-size: 30px;
     margin: 10px 0px 10px 0px;
     padding: 5px;
-    border: 1px solid red;
-    
+    z-index: 2;
 }
-  
-.container {
-    display: grid;
+
+main {
+    display: flex;
     max-width: 600px;
     max-height: 600px;
     margin: 0 auto;
-}
-
-img {
-    width: 100%;
-}
-
-.item {
-    position: relative;
-    width: 500px;
-    top: 10px;
-    left: 40px;
-    margin: 10px 0px 10px 0px;
     border: 1px solid red;
+}
+
+.container {
+    
+}
+
+.fundoFolha {
+    position: absolute;
+    max-width: 500px;
+    right: 360px;
+    margin: 5px 0px 5px 0px;
+    z-index: 3;
 }
  
 .page-logo {
     position: relative;
     width: 250px;
     top: auto;
+    left: 620px;
     margin: 0 auto;
-    border: 1px solid red;
 }
   
 .alura-logo {
-    width: 60px;
+    width: 80px;
     position: absolute;
     top: 15px;
     right: 15px;
 }
+
+
