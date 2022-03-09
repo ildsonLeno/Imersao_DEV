@@ -11,18 +11,28 @@
 body {
   font-family: "Gochi Hand";
   background-color: #082b59;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 
-main{
+header {
+    max-width: 1280px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+height: 60px;
+  outline: 1px solid red;
+}
+
+main {
+  position: relative;
   justify-content: center;
   display: flex;
   align-items: center;
-  border: 1px solid red;
+  outline: 1px solid red;
 }
 
 /* .container {
@@ -32,30 +42,27 @@ main{
   margin: 0 auto;
 } */
 
-.alura-logo {
-  max-width: 100%;
-}
-
 .cabecalho {
   max-width: 100%;
-  padding: 5px 2%;
-  border: 1px solid red;
 }
 
-.logo {
+.alura-logo {
+  position: absolute;
+  z-index: 2;
+  left: 900px;
   width: 95px;
   height: 45px;
 }
 
-.fundoFolha {
-  max-width: 400px;
+.page-logo {
+    position: absolute;
+    z-index: 1;
+    left: 500px;
+    max-width: 300px;
 }
 
-.page-logo {
-  position: absolute;
-  right: 800px;
-  max-width: 300px;
-  border: 1px solid red;
+.fundoFolha {
+  max-width: 400px;
 }
 
 .titulo {
@@ -67,7 +74,6 @@ main{
 }
 
 .subtitulo {
-  bottom: auto;
   color: #313131;
   text-align: center;
   font-size: 30px;
