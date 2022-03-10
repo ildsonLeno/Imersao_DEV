@@ -5,78 +5,94 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   font-family: "Gochi Hand";
   background-color: #082b59;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
+  color: black;
+}
+
+.noteBG{
+  position: fixed;
+  z-index: 0;
+  margin: 5px 35%;
+  bottom: 5px;
+}
+
+.conteudo{
   position: relative;
+  z-index: 3;
+  text-align: center;
+  width: 60%;
+  height: 80%;
+  margin: 50px auto;
+  padding: 1rem;
+  border: solid 1px red;
+  
 }
 
-header {
-    max-width: 1280px;
+#img-1 {
+  position: fixed;
+  right: 12px;
+  top: 12px;
+}
+
+header h1{
+  font-size: 50px;
+  padding-top: 15px;
+}
+
+header p{
+  font-size: 25px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+section input {
   position: relative;
-  justify-content: center;
-  display: flex;
-height: 60px;
-  outline: 1px solid red;
-}
-
-main {
-  position: relative;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  outline: 1px solid red;
-}
-
-/* .container {
-  display: grid;
-  max-width: 600px;
-  max-height: 600px;
-  margin: 0 auto;
-} */
-
-.cabecalho {
-  max-width: 100%;
-}
-
-.alura-logo {
-  position: absolute;
   z-index: 2;
-  left: 900px;
-  width: 95px;
-  height: 45px;
+  justify-content: center;
+  flex-direction: column;
+  width: 180px;
+  height: 25px;
+  font-size: 15px;
+  text-align: center;
+  border: solid 2px #0F54A8;
+  border-radius: 10px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: flex;
+
+  margin-top: 5rem;
+  width: 100px;
+  height: 30px;
+  background: #0b4182;
+  color: white;
+  font-size: 18px;
+  border: solid 1px #0F54A8;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.button:hover {
+  background: #0F54A8;
+}
+
+.textoResultado {
+  margin-top: 20px;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+  font-size: 18px;
 }
 
 .page-logo {
-    position: absolute;
-    z-index: 1;
-    left: 500px;
-    max-width: 300px;
-}
-
-.fundoFolha {
-  max-width: 400px;
-}
-
-.titulo {
-  color: #161616;
-  text-align: center;
-  font-size: 50px;
-  margin: 10px 0px 10px 0px;
-  padding: 5px;
-}
-
-.subtitulo {
-  color: #313131;
-  text-align: center;
-  font-size: 30px;
-  margin: 10px 0px 10px 0px;
-  padding: 5px;
+  position: fixed;
+  margin: 5px auto;
+  
+  top: 5px;
 }
