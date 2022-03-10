@@ -14,9 +14,9 @@ body {
 }
 
 .noteBG{
-  position: fixed;
+  position: relative;
   z-index: 0;
-  margin: 5px 35%;
+  margin: 5px 20%;
   bottom: 5px;
 }
 
@@ -24,7 +24,7 @@ body {
   position: relative;
   z-index: 3;
   text-align: center;
-  width: 60%;
+  width: 50%;
   height: 80%;
   margin: 50px auto;
   padding: 1rem;
@@ -39,11 +39,15 @@ body {
 }
 
 header h1{
+  position: relative;
+  z-index: 1;
   font-size: 50px;
   padding-top: 15px;
 }
 
 header p{
+  position: relative;
+  z-index: 2;
   font-size: 25px;
   padding-top: 15px;
   padding-bottom: 25px;
@@ -66,7 +70,6 @@ section input {
 
 .button {
   display: flex;
-
   margin-top: 5rem;
   width: 100px;
   height: 30px;
@@ -92,7 +95,8 @@ section input {
 
 .page-logo {
   position: fixed;
-  margin: 5px auto;
-  
+  width: 40vh;
+  right: 85vh;
+  margin: 10px auto;
   top: 5px;
 }
