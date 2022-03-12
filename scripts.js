@@ -15,4 +15,4 @@ document.getElementById("submit").onclick = function (e) {
         resultado = "Você foi Repovado";
     }
   
-document.getElementById("resultado").innerHTML = `A media da sua nota é <em><b>${media}</b></em> e <em>${resultado}</em>`}
+document.getElementById("resultado").innerHTML = `<b>Resultado:</b> A média da sua nota é <em><b>${media}</b></em> e <em><b>${resultado}</b></em>`}
