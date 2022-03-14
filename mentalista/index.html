@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Imersão Dev - Aula 03</title>
+  </head>
+  <body onload="gerarNumeroSecreto()">
+    <main id="tela-intial">
+      <div id="titulo">
+        <h1>Mentalista</h1>
+        <img
+        src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg"
+        class="page-logo"
+        alt=""
+        /><br />
+        <p class="centro" id="dica">Digite um número de 0 a 10</p>
+      </div>
+      
+
+      <section class="conteudos">
+        <input
+          type="number"
+          step="1"
+          min="1"
+          max="10"
+          name="inputNumero"
+          id="inputNumero"
+          class="input animar"
+          onBlur="validarNumeroDigitado (this.value)"
+          onClick="ativarBtnChutar()"
+        />
+        <button id="btnChutar" class="botao" onclick="jogar()">Chutar</button>
+        <br />
+      </section>
+      <p class="centro" id="aviso"></p>
+      <a href="https://alura.com.br/" target="_blank">
+        <img
+          src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
+          alt=""
+          class="alura-logo"
+        />
+      </a>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

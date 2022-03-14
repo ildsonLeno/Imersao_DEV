@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/73/85/XLmDIF.png");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  #listaGames {
+      margin: 10px;
+      max-height: 250px;
+  }
+
+  .form-wrapper {
+      margin: 0 0 15px;
+  }
+
+  .form-wrapper input {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 15px;
+  }
+  
+  .form-wrapper button {
+    border: 0;
+    color: #ffffff;
+    background: #da1e26;
+    font-weight: bold;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .form-wrapper button:hover {
+    opacity: 0.8;
+  }
+
+  body > img {
+    margin: 0 10px;
+    
+  }
+  
+  img {
+    max-height: 250px;
+  }
+  
